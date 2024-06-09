@@ -482,6 +482,11 @@ a:hover {
 }
 
 @media (min-width: 800px) {
+  .projects__app-container {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+  }
+
   .welcome {
     width: fit-content;
     margin: 0 auto;
