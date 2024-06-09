@@ -1,174 +1,150 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portafolio web de Diego Quintana (@diegoquinfa on GitHub), aquí se muestra los proyectos que hecho como full-stack (backend y frontend) developer"
-    />
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index, follow" />
-    <title>Full-Stack | Diego Quintana</title>
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#projects" alt="asd">Proyectos</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" alt="asd">Sobre mi</a>
-          </li>
-          <li class="nav__item" alt="asd">
-            <a href="#">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="welcome">
-        <figure class="welcome__img-container">
-          <div class="relative rounded-full">
-            <div class="welcome__online absolute rounded-full"></div>
-            <div class="welcome__online--ping absolute rounded-full"></div>
-            <img
-              class="welcome__img"
-              src="assets/img/profile_pic.webp"
-              alt="Diego Quintana Developer"
-            />
-          </div>
-          <figcaption class="welcome__ready-to-work-container">
-            <a
-              class="welcomen__ready-to-work-anchor btn"
-              href="https://www.linkedin.com/in/diegoquinfa/"
-              alt="Hola"
-              target="_blank"
-            >
-              Disponible para trabajar
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portafolio web de Diego Quintana (@diegoquinfa on GitHub), aquí se muestra los proyectos que hecho como full-stack (backend y frontend) developer" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index, follow" />
+  <title>Full-Stack | Diego Quintana</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#projects" alt="Sección de proyectos realizados">Proyectos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" alt="Sección de información sobre Diego Quintana">Sobre mi</a>
+        </li>
+        <li class="nav__item" alt="Sección de contacto e información">
+          <a href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="welcome">
+      <figure class="welcome__img-container">
+        <div class="relative rounded-full">
+          <div class="welcome__online absolute rounded-full"></div>
+          <div class="welcome__online--ping absolute rounded-full"></div>
+          <img class="welcome__img" src="assets/img/profile_pic.webp" alt="Diego Quintana Developer" />
+        </div>
+        <figcaption class="welcome__ready-to-work-container">
+          <a class="welcomen__ready-to-work-anchor btn" href="https://www.linkedin.com/in/diegoquinfa/"
+            alt="Redirección al LinkedIn" target="_blank">
+            Disponible para trabajar
+          </a>
+        </figcaption>
+      </figure>
+
+      <div class="welcome__text-container">
+        <h1 class="welcome__title">
+          Hola, soy <span class="welcome__title--name">Diego Quintana</span>
+        </h1>
+        <p class="welcome__description">
+          Desarrollador Full-Stack y estudiante de 9º semestre de
+          <span class="welcome__description--yellow">
+            Ingeniería de sistemas y computación
+          </span>
+          de Cartagena, Colombia 🇨🇴.
+        </p>
+      </div>
+
+      <div class="welcome__social-container">
+        <a href="https://www.linkedin.com/in/diegoquinfa/" target="_blank" alt="Cuenta de LinkedIn"
+          class="welcome__social-icon welcome__social-icon--linkedIn"></a>
+        <a href="https://github.com/Diegoquinfa" target="_blank" alt="Cuenta de Github"
+          class="welcome__social-icon welcome__social-icon--github"></a>
+        <p class="welcome__email">Diegoquinfa@proton.me</p>
+      </div>
+    </section>
+    <span id="projects" class="visibility-none"></span>
+
+    <section class="projects">
+      <h2 class="projects__title">
+        Proyectos <span class="projects__title-icon"></span>
+      </h2>
+
+      <div class="projects__app-list">
+        <article class="projects__app-container">
+          <figure class="projects__app-img-container">
+            <img loading="lazy" class="projects__app-img" src="/assets/img/image-uploader.webp"
+              alt="image uploader screenshot app" />
+            <!-- src="/assets/img/profile_pic.jpeg" -->
+          </figure>
+          <div class="projects__app-info">
+            <h3 class="projects__app-title">Image uploader</h3>
+            <div class="projects__app-tags">
+              <div class="projects__app-tag projects__app-tag--node">
+                Node.js
+              </div>
+              <div class="projects__app-tag projects__app-tag--mongo">
+                MongoDB
+              </div>
+              <div class="projects__app-tag projects__app-tag--html">
+                HTML
+              </div>
+              <div class="projects__app-tag projects__app-tag--css">CSS</div>
+            </div>
+
+            <p class="projects__app-description">
+              Este proyecto, desarrollado con
+              <span class="projects__app-description--bold">
+                Node.js y Express.js </span>, permite a los usuarios subir imágenes a un servidor y obtener
+              un enlace para compartirlas. Utiliza
+              <span class="projects__app-description--bold">MongoDB</span>
+              para almacenar las referencias de las imágenes y Cloudinary como
+              servicio de almacenamiento para las imágenes.
+            </p>
+
+            <a class="projects__github-anchor btn" href="" target="_blank"
+              alt="Codigo fuente del proyecto Image uploader">
+              <span class="projects__github-code">Código</span>
             </a>
-          </figcaption>
-        </figure>
+          </div>
+        </article>
 
-        <div class="welcome__text-container">
-          <h1 class="welcome__title">
-            Hola, soy <span class="welcome__title--name">Diego Quintana</span>
-          </h1>
-          <p class="welcome__description">
-            Desarrollador Full-Stack y estudiante de 9º semestre de
-            <span class="welcome__description--yellow">
-              Ingeniería de sistemas y computación
-            </span>
-            de Cartagena, Colombia 🇨🇴.
-          </p>
-        </div>
-
-        <div class="welcome__social-container">
-          <a
-            href="https://www.linkedin.com/in/diegoquinfa/"
-            target="_blank"
-            alt="Hola"
-            class="welcome__social-icon welcome__social-icon--linkedIn"
-          ></a>
-          <a
-            href="https://github.com/Diegoquinfa"
-            target="_blank"
-            alt="Hola"
-            class="welcome__social-icon welcome__social-icon--github"
-          ></a>
-          <p class="welcome__email">Diegoquinfa@proton.me</p>
-        </div>
-      </section>
-      <span id="projects" class="visibility-none"></span>
-
-      <section class="projects">
-        <h2 class="projects__title">
-          Proyectos <span class="projects__title-icon"></span>
-        </h2>
-
-        <div class="projects__app-list">
-          <article class="projects__app-container">
-            <figure class="projects__app-img-container">
-              <img
-                loading="lazy"
-                class="projects__app-img"
-                src="/assets/img/image-uploader.webp"
-                alt="image uploader screenshot app"
-              />
-              <!-- src="/assets/img/profile_pic.jpeg" -->
-            </figure>
-            <div class="projects__app-info">
-              <h3 class="projects__app-title">Image uploader</h3>
-              <div class="projects__app-tags">
-                <div class="projects__app-tag projects__app-tag--node">
-                  Node.js
-                </div>
-                <div class="projects__app-tag projects__app-tag--mongo">
-                  MongoDB
-                </div>
-                <div class="projects__app-tag projects__app-tag--html">
-                  HTML
-                </div>
-                <div class="projects__app-tag projects__app-tag--css">CSS</div>
+        <article class="projects__app-container">
+          <figure class="projects__app-img-container">
+            <img loading="lazy" class="projects__app-img" src="/assets/img/tic-tac-toe.webp"
+              alt="image uploader screenshot app" />
+          </figure>
+          <div class="projects__app-info">
+            <h3 class="projects__app-title">Tic-Tac-Toe with React.js</h3>
+            <div class="projects__app-tags">
+              <div class="projects__app-tag projects__app-tag--react">
+                React.js
               </div>
-
-              <p class="projects__app-description">
-                Este proyecto, desarrollado con
-                <span class="projects__app-description--bold">
-                  Node.js y Express.js </span
-                >, permite a los usuarios subir imágenes a un servidor y obtener
-                un enlace para compartirlas. Utiliza
-                <span class="projects__app-description--bold">MongoDB</span>
-                para almacenar las referencias de las imágenes y Cloudinary como
-                servicio de almacenamiento para las imágenes.
-              </p>
-
-              <a class="projects__github-anchor btn" href="" target="_blank">
-                <span class="projects__github-code">Código</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="projects__app-container">
-            <figure class="projects__app-img-container">
-              <img
-                loading="lazy"
-                class="projects__app-img"
-                src="/assets/img/tic-tac-toe.webp"
-                alt="image uploader screenshot app"
-              />
-            </figure>
-            <div class="projects__app-info">
-              <h3 class="projects__app-title">Tic-Tac-Toe with React.js</h3>
-              <div class="projects__app-tags">
-                <div class="projects__app-tag projects__app-tag--react">
-                  React.js
-                </div>
-                <div class="projects__app-tag projects__app-tag--html">
-                  HTML
-                </div>
-                <div class="projects__app-tag projects__app-tag--css">CSS</div>
+              <div class="projects__app-tag projects__app-tag--html">
+                HTML
               </div>
-
-              <p class="projects__app-description">
-                Este proyecto es una implementación del clásico juego de Tic Tac
-                Toe (Tres en Raya) utilizando
-                <span class="projects__app-description--bold">React.js</span>.
-                Ofrece una interfaz interactiva y dinámica.
-              </p>
-
-              <a class="projects__github-anchor btn" href="" target="_blank">
-                <span class="projects__github-code">Código</span>
-              </a>
+              <div class="projects__app-tag projects__app-tag--css">CSS</div>
             </div>
-          </article>
-        </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
+
+            <p class="projects__app-description">
+              Este proyecto es una implementación del clásico juego de Tic Tac
+              Toe (Tres en Raya) utilizando
+              <span class="projects__app-description--bold">React.js</span>.
+              Ofrece una interfaz interactiva y dinámica.
+            </p>
+
+            <a class="projects__github-anchor btn" href="" target="_blank" alt="Codigo fuente del proyecto tic-tac-toe">
+              <span class="projects__github-code">Código</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
