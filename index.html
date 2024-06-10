@@ -1,295 +1,222 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Portafolio web de Diego Quintana (@diegoquinfa on GitHub), aquí se muestra los proyectos que hecho como full-stack (backend y frontend) developer"
-    />
-    <meta
-      name="keywords"
-      content="Developer, fullstack, backend, frontend, javascript, web, porfolio, ingeniero, sistemas, golang"
-    />
-    <meta
-      name="author"
-      content="Diego Andrés Quintana Fajardo <diegoquinfa@proton.me>"
-    />
-    <meta name="copyright" content="Diego Andrés Quintana" />
 
-    <meta name="robots" content="index,follow" />
-    <meta name="googlebot" content="index, follow" />
-    <title>Full-Stack | Diego Quintana</title>
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Portafolio web de Diego Quintana (@diegoquinfa on GitHub), aquí se muestra los proyectos que hecho como full-stack (backend y frontend) developer" />
+  <meta name="keywords"
+    content="Developer, fullstack, backend, frontend, javascript, web, porfolio, ingeniero, sistemas, golang" />
+  <meta name="author" content="Diego Andrés Quintana Fajardo <diegoquinfa@proton.me>" />
+  <meta name="copyright" content="Diego Andrés Quintana" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index, follow" />
 
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#projects" alt="Sección de proyectos realizados"
-              >Proyectos</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="#about" alt="Sección de información sobre Diego Quintana"
-              >Sobre mi</a
-            >
-          </li>
-          <li class="nav__item" alt="Sección de contacto e información">
-            <a href="#contact">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <section class="welcome">
-        <figure class="welcome__img-container profile-picture">
-          <div class="relative rounded-full">
-            <div class="profile-picture__online absolute rounded-full"></div>
-            <div
-              class="profile-picture__online--ping absolute rounded-full"
-            ></div>
-            <img
-              class="profile-picture__img"
-              src="assets/img/profile_linkedIn.webp"
-              alt="Diego Quintana Developer"
-            />
-          </div>
-          <figcaption class="welcome__ready-to-work-container">
-            <a
-              class="welcomen__ready-to-work-anchor btn"
-              href="https://www.linkedin.com/in/diegoquinfa/"
-              alt="Redirección al LinkedIn"
-              target="_blank"
-            >
-              Disponible para trabajar
+  <!-- Open Graph -->
+  <meta property="og:title" content="Diego Quintana | Full-Stack Developer" />
+  <meta property="og:description"
+    content="Portafolio web de Diego Quintana (@diegoquinfa on GitHub), aquí se muestra los proyectos que hecho como full-stack (backend y frontend) developer" />
+  <meta property="og:url" content="https://diegoquinfa.vercel.app/" />
+  <meta property="og:image" content="https://diegoquinfa.vercel.app/assets/img/open_graph.webp" />
+
+  <title>Diego Quintana | Full-Stack Developer</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#projects" alt="Sección de proyectos realizados">Proyectos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" alt="Sección de información sobre Diego Quintana">Sobre mi</a>
+        </li>
+        <li class="nav__item" alt="Sección de contacto e información">
+          <a href="#contact">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="welcome">
+      <figure class="welcome__img-container profile-picture">
+        <div class="relative rounded-full">
+          <div class="profile-picture__online absolute rounded-full"></div>
+          <div class="profile-picture__online--ping absolute rounded-full"></div>
+          <img class="profile-picture__img" src="assets/img/profile_linkedIn.webp" alt="Diego Quintana Developer" />
+        </div>
+        <figcaption class="welcome__ready-to-work-container">
+          <a class="welcomen__ready-to-work-anchor btn" href="https://www.linkedin.com/in/diegoquinfa/"
+            alt="Redirección al LinkedIn" target="_blank">
+            Disponible para trabajar
+          </a>
+        </figcaption>
+      </figure>
+
+      <div class="welcome__text-container">
+        <h1 class="welcome__title">
+          Hola, soy <span class="welcome__title--name">Diego Quintana</span>
+        </h1>
+        <p class="welcome__description">
+          Desarrollador Full-Stack y estudiante de 9º semestre de
+          <span class="welcome__description--yellow">
+            Ingeniería de sistemas y computación
+          </span>
+          de Cartagena, Colombia 🇨🇴.
+        </p>
+      </div>
+
+      <div class="welcome__social-container">
+        <a href="https://www.linkedin.com/in/diegoquinfa/" target="_blank" alt="Cuenta de LinkedIn"
+          class="welcome__social-icon welcome__social-icon--linkedIn"></a>
+        <a href="https://github.com/Diegoquinfa" target="_blank" alt="Cuenta de Github"
+          class="welcome__social-icon welcome__social-icon--github"></a>
+        <p class="welcome__email">Diegoquinfa@proton.me</p>
+      </div>
+    </section>
+    <span id="projects" class="visibility-none"></span>
+
+    <section class="projects section">
+      <h2 class="projects__title section__title">Proyectos</h2>
+
+      <div class="projects__app-list">
+        <article class="projects__app-container">
+          <figure class="projects__app-img-container">
+            <img loading="lazy" class="projects__app-img" src="/assets/img/image-uploader.webp"
+              alt="image uploader screenshot app" />
+            <!-- src="/assets/img/profile_pic.jpeg" -->
+          </figure>
+          <div class="projects__app-info">
+            <h3 class="projects__app-title">Image uploader</h3>
+            <div class="projects__app-tags">
+              <div class="projects__app-tag projects__app-tag--node">
+                Node.js
+              </div>
+              <div class="projects__app-tag projects__app-tag--mongo">
+                MongoDB
+              </div>
+              <div class="projects__app-tag projects__app-tag--html">
+                HTML
+              </div>
+              <div class="projects__app-tag projects__app-tag--css">CSS</div>
+            </div>
+
+            <p class="projects__app-description">
+              Este proyecto, desarrollado con
+              <span class="projects__app-description--bold">
+                Node.js y Express.js </span>, permite a los usuarios subir imágenes a un servidor y obtener
+              un enlace para compartirlas. Utiliza
+              <span class="projects__app-description--bold">MongoDB</span>
+              para almacenar las referencias de las imágenes y Cloudinary como
+              servicio de almacenamiento para las imágenes.
+            </p>
+
+            <a class="projects__github-anchor btn" href="https://github.com/diegoquinfa/image-uploader" target="_blank"
+              alt="Codigo fuente del proyecto Image uploader">
+              <span class="projects__github-code">Código</span>
             </a>
-          </figcaption>
+          </div>
+        </article>
+
+        <article class="projects__app-container">
+          <figure class="projects__app-img-container">
+            <img loading="lazy" class="projects__app-img" src="/assets/img/tic-tac-toe.webp"
+              alt="image uploader screenshot app" />
+          </figure>
+          <div class="projects__app-info">
+            <h3 class="projects__app-title">Tic-Tac-Toe with React.js</h3>
+            <div class="projects__app-tags">
+              <div class="projects__app-tag projects__app-tag--react">
+                React.js
+              </div>
+              <div class="projects__app-tag projects__app-tag--html">
+                HTML
+              </div>
+              <div class="projects__app-tag projects__app-tag--css">CSS</div>
+            </div>
+
+            <p class="projects__app-description">
+              Este proyecto es una implementación del clásico juego de Tic Tac
+              Toe (Tres en Raya) utilizando
+              <span class="projects__app-description--bold">React.js</span>.
+              Ofrece una interfaz interactiva y dinámica.
+            </p>
+
+            <a class="projects__github-anchor btn" href="https://github.com/diegoquinfa/tic-tac-toe-reactjs"
+              target="_blank" alt="Codigo fuente del proyecto tic-tac-toe">
+              <span class="projects__github-code">Código</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <span id="about" class="visibility-none"></span>
+
+    <section class="about section">
+      <h2 class="about__title section__title">Sobre mi</h2>
+
+      <div class="about__info">
+        <figure class="about__picture profile-picture profile-picture--center">
+          <div class="relative rounded-full">
+            <div class="about__picture__online profile-picture__online absolute rounded-full"></div>
+            <div class="about__picture__online--ping profile-picture__online--ping absolute rounded-full"></div>
+            <img class="about__img profile-picture__img" src="assets/img/profile_linkedIn_lg.webp"
+              alt="Diego Quintana Developer" />
+          </div>
         </figure>
 
-        <div class="welcome__text-container">
-          <h1 class="welcome__title">
-            Hola, soy <span class="welcome__title--name">Diego Quintana</span>
-          </h1>
-          <p class="welcome__description">
-            Desarrollador Full-Stack y estudiante de 9º semestre de
-            <span class="welcome__description--yellow">
-              Ingeniería de sistemas y computación
-            </span>
-            de Cartagena, Colombia 🇨🇴.
+        <div class="about__description">
+          <p class="about__paragraph">
+            Soy estudiante de 9º semestre de
+            <span class="about__paragraph--yellow">Ingeniería de Sistemas y Computación</span>
+            en la
+            <span class="about__paragraph--white">Universidad Tecnológica de Bolívar</span>. Me enfoco en desarrollar
+            aplicaciones web, con JavaScript y de
+            vez en cuando con Go. Los
+            <span class="about__paragraph--white">lenguajes de programación</span>
+            que manejo son:
+            <span class="about__paragraph--white">JavaScript, Go (Golang) y Python.</span>
           </p>
+          <p class="about__paragraph">
+            Apasionado por el desarrollo de aplicaciones web
+            <span class="about__paragraph--white">full-stack</span>,
+            utilizando
+            <span class="about__paragraph--white">React.js, Node.js, Express.js, MongoDB y PostgreSQL</span>.
+            <span class="about__paragraph--yellow">Soy un aprendiz rápido y siempre busco nuevas tecnologías para
+              expandir mis conocimientos.</span>
+            Actualmente, estoy interesado en tecnologías emergentes como
+            <span class="about__paragraph--white">Hono, TailwindCSS y Astro.</span>
+          </p>
+          <p class="about__paragraph">
+            Estoy
+            <span class="about__paragraph--white">entusiasmado por la oportunidad de ingresar al mundo
+              laboral</span>
+            para aplicar mis habilidades y conocimientos en un entorno
+            profesional.
+            <span id="contact" class="about__paragraph--yellow">Busco oportunidades en desarrollo web, tanto en
+              front-end como
+              en back-end</span>, donde pueda seguir aprendiendo y creciendo como desarrollador.
+          </p>
+          <p class="about__paragraph">
+            <span class="about__paragraph--yellow">¡Me encantaría saber de ti!</span>
+            Puedes contactarme a través de LinkedIn:
+          </p>
+
+          <a class="about__contact btn" href="https://www.linkedin.com/in/diegoquinfa/" target="_blank">
+            Cantacto
+          </a>
         </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Made by Diego</p>
+    <a class="footer__link" href="https://github.com/diegoquinfa/porfolio-web" target="_blank">Source Code</a>
+  </footer>
+</body>
 
-        <div class="welcome__social-container">
-          <a
-            href="https://www.linkedin.com/in/diegoquinfa/"
-            target="_blank"
-            alt="Cuenta de LinkedIn"
-            class="welcome__social-icon welcome__social-icon--linkedIn"
-          ></a>
-          <a
-            href="https://github.com/Diegoquinfa"
-            target="_blank"
-            alt="Cuenta de Github"
-            class="welcome__social-icon welcome__social-icon--github"
-          ></a>
-          <p class="welcome__email">Diegoquinfa@proton.me</p>
-        </div>
-      </section>
-      <span id="projects" class="visibility-none"></span>
-
-      <section class="projects section">
-        <h2 class="section__title">Proyectos</h2>
-
-        <div class="projects__app-list">
-          <article class="projects__app-container">
-            <figure class="projects__app-img-container">
-              <img
-                loading="lazy"
-                class="projects__app-img"
-                src="/assets/img/image-uploader.webp"
-                alt="image uploader screenshot app"
-              />
-              <!-- src="/assets/img/profile_pic.jpeg" -->
-            </figure>
-            <div class="projects__app-info">
-              <h3 class="projects__app-title">Image uploader</h3>
-              <div class="projects__app-tags">
-                <div class="projects__app-tag projects__app-tag--node">
-                  Node.js
-                </div>
-                <div class="projects__app-tag projects__app-tag--mongo">
-                  MongoDB
-                </div>
-                <div class="projects__app-tag projects__app-tag--html">
-                  HTML
-                </div>
-                <div class="projects__app-tag projects__app-tag--css">CSS</div>
-              </div>
-
-              <p class="projects__app-description">
-                Este proyecto, desarrollado con
-                <span class="projects__app-description--bold">
-                  Node.js y Express.js </span
-                >, permite a los usuarios subir imágenes a un servidor y obtener
-                un enlace para compartirlas. Utiliza
-                <span class="projects__app-description--bold">MongoDB</span>
-                para almacenar las referencias de las imágenes y Cloudinary como
-                servicio de almacenamiento para las imágenes.
-              </p>
-
-              <a
-                class="projects__github-anchor btn"
-                href="https://github.com/diegoquinfa/image-uploader"
-                target="_blank"
-                alt="Codigo fuente del proyecto Image uploader"
-              >
-                <span class="projects__github-code">Código</span>
-              </a>
-            </div>
-          </article>
-
-          <article class="projects__app-container">
-            <figure class="projects__app-img-container">
-              <img
-                loading="lazy"
-                class="projects__app-img"
-                src="/assets/img/tic-tac-toe.webp"
-                alt="image uploader screenshot app"
-              />
-            </figure>
-            <div class="projects__app-info">
-              <h3 class="projects__app-title">Tic-Tac-Toe with React.js</h3>
-              <div class="projects__app-tags">
-                <div class="projects__app-tag projects__app-tag--react">
-                  React.js
-                </div>
-                <div class="projects__app-tag projects__app-tag--html">
-                  HTML
-                </div>
-                <div class="projects__app-tag projects__app-tag--css">CSS</div>
-              </div>
-
-              <p class="projects__app-description">
-                Este proyecto es una implementación del clásico juego de Tic Tac
-                Toe (Tres en Raya) utilizando
-                <span class="projects__app-description--bold">React.js</span>.
-                Ofrece una interfaz interactiva y dinámica.
-              </p>
-
-              <a
-                class="projects__github-anchor btn"
-                href="https://github.com/diegoquinfa/tic-tac-toe-reactjs"
-                target="_blank"
-                alt="Codigo fuente del proyecto tic-tac-toe"
-              >
-                <span class="projects__github-code">Código</span>
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-      <span id="about" class="visibility-none"></span>
-
-      <section class="about section">
-        <h2 class="section__title">Sobre mi</h2>
-
-        <div class="about__info">
-          <figure
-            class="about__picture profile-picture profile-picture--center"
-          >
-            <div class="relative rounded-full">
-              <div
-                class="about__picture__online profile-picture__online absolute rounded-full"
-              ></div>
-              <div
-                class="about__picture__online--ping profile-picture__online--ping absolute rounded-full"
-              ></div>
-              <img
-                class="about__img profile-picture__img"
-                src="assets/img/profile_linkedIn_lg.webp"
-                alt="Diego Quintana Developer"
-              />
-            </div>
-          </figure>
-
-          <div class="about__description">
-            <p class="about__paragraph">
-              Soy estudiante de 9º semestre de
-              <span class="about__paragraph--yellow"
-                >Ingeniería de Sistemas y Computación</span
-              >
-              en la
-              <span class="about__paragraph--white"
-                >Universidad Tecnológica de Bolívar</span
-              >. Me enfoco en desarrollar aplicaciones web, con JavaScript y de
-              vez en cuando con Go. Los
-              <span class="about__paragraph--white"
-                >lenguajes de programación</span
-              >
-              que manejo son:
-              <span class="about__paragraph--white"
-                >JavaScript, Go (Golang) y Python.</span
-              >
-            </p>
-            <p class="about__paragraph">
-              Apasionado por el desarrollo de aplicaciones web
-              <span class="about__paragraph--white">full-stack</span>,
-              utilizando
-              <span class="about__paragraph--white"
-                >React.js, Node.js, Express.js, MongoDB y PostgreSQL</span
-              >.
-              <span class="about__paragraph--yellow"
-                >Soy un aprendiz rápido y siempre busco nuevas tecnologías para
-                expandir mis conocimientos.</span
-              >
-              Actualmente, estoy interesado en tecnologías emergentes como
-              <span class="about__paragraph--white"
-                >Hono, TailwindCSS y Astro.</span
-              >
-            </p>
-            <p class="about__paragraph">
-              Estoy
-              <span class="about__paragraph--white"
-                >entusiasmado por la oportunidad de ingresar al mundo
-                laboral</span
-              >
-              para aplicar mis habilidades y conocimientos en un entorno
-              profesional.
-              <span id="contact" class="about__paragraph--yellow"
-                >Busco oportunidades en desarrollo web, tanto en front-end como
-                en back-end</span
-              >, donde pueda seguir aprendiendo y creciendo como desarrollador.
-            </p>
-            <p class="about__paragraph">
-              <span class="about__paragraph--yellow"
-                >¡Me encantaría saber de ti!</span
-              >
-              Puedes contactarme a través de LinkedIn:
-            </p>
-
-            <a
-              class="about__contact btn"
-              href="https://www.linkedin.com/in/diegoquinfa/"
-              target="_blank"
-            >
-              Cantacto
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <p>Made by Diego</p>
-      <a
-        class="footer__link"
-        href="https://github.com/diegoquinfa/porfolio-web"
-        target="_blank"
-        >Source Code</a
-      >
-    </footer>
-  </body>
 </html>

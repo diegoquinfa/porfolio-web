@@ -111,7 +111,6 @@ a:hover {
 
 .section__title::after {
   content: '';
-  background-image: url('/assets/icons/directory.svg');
   background-size: var(--lg);
   vertical-align: -50%;
   width: var(--lg);
@@ -283,6 +282,10 @@ a:hover {
 
 /* Projects */
 
+.projects__title::after {
+  background-image: url('/assets/icons/directory.svg');
+}
+
 .projects__app-list {
   display: flex;
   flex-direction: column;
@@ -401,6 +404,10 @@ a:hover {
 
 .about {
   gap: 2rem;
+}
+
+.about__title::after {
+  background-image: url('/assets/icons/user.svg');
 }
 
 .about__info {
