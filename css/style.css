@@ -244,7 +244,7 @@ a:hover {
 }
 
 .welcome__description {
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .welcome__description--yellow {
@@ -353,7 +353,7 @@ a:hover {
 }
 
 .projects__app-description {
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .projects__app-description--bold {
@@ -432,7 +432,7 @@ a:hover {
 }
 
 .about__paragraph {
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 .about__paragraph--yellow {
@@ -515,7 +515,6 @@ a:hover {
 }
 
 @keyframes ping {
-
   75%,
   100% {
     transform: scale(1.5);
