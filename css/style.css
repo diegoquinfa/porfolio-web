@@ -12,7 +12,7 @@
   --bg-secundary: #232830;
 
   --purple: #6266f0;
-  /* --purple: #9da0ff; */
+  --purple-soft: #9da0ff;
   --yellow: #f0ec62;
 
   --gray-soft: #d1d5db;
@@ -21,8 +21,12 @@
   --green-soft: #62f0a5;
   --green-hard: #0ab159;
 
+  /* 48px*/
+  --xl-desktop: 3rem;
   /* 24px*/
   --xl: 1.5rem;
+  /* 28 */
+  --lg-desktop: 1.75rem;
   /* 20px*/
   --lg: 1.25rem;
   /* 16px */
@@ -231,15 +235,18 @@ a:hover {
 }
 
 .welcome__title {
-  font-weight: normal;
+  color: var(--white);
+  font-weight: 500;
   font-size: var(--lg);
 }
 
 .welcome__title--name {
   font-weight: bold;
-  color: var(--purple);
+  color: var(--purple-soft);
   filter: drop-shadow(0 2px 4px var(--purple));
   font-size: var(--xl);
+  display: inline-block;
+  width: max-content;
 }
 
 .welcome__description {
@@ -369,7 +376,7 @@ a:hover {
 }
 
 .projects__app-description--bold {
-  color: var(--purple);
+  color: var(--purple-soft);
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -458,7 +465,6 @@ a:hover {
 
 .about__paragraph--white {
   color: var(--white);
-  font-weight: 500;
 }
 
 .about__contact {
@@ -498,9 +504,22 @@ a:hover {
 }
 
 @media (min-width: 800px) {
+  .welcome__title {
+    font-size: var(--xl);
+  }
+
+  .welcome__title--name {
+    width: fit-content;
+    font-size: var(--lg-desktop);
+  }
+
   .projects__app-container {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
+  }
+
+  .welcome__description {
+    font-size: var(--lg);
   }
 
   .welcome {
