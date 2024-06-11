@@ -25,7 +25,7 @@
   --xl-desktop: 3rem;
   /* 24px*/
   --xl: 1.5rem;
-  /* 28 */
+  /* 28px */
   --lg-desktop: 1.75rem;
   /* 20px*/
   --lg: 1.25rem;
@@ -552,6 +552,7 @@ a:hover {
 }
 
 @keyframes ping {
+
   75%,
   100% {
     transform: scale(1.5);
