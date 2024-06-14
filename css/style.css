@@ -3,6 +3,11 @@
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: var(--bg-primary);
+  background-image: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    var(--bg-secundary),
+    var(--bg-primary)
+  );
   color: var(--white);
 
   --white: #ffffff;
@@ -552,7 +557,6 @@ a:hover {
 }
 
 @keyframes ping {
-
   75%,
   100% {
     transform: scale(1.5);
