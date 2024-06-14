@@ -312,6 +312,7 @@ a:hover {
 }
 
 .projects__app-img-container {
+  aspect-ratio: 16/9;
   height: fit-content;
   width: fit-content;
   overflow: hidden;
@@ -322,6 +323,7 @@ a:hover {
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: var(--xs);
+  min-height: 200px;
   width: 100%;
   height: 100%;
   transition: transform 0.2s;
